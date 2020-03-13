@@ -1,43 +1,29 @@
 {
   "settings": {
-    "name": "My Site",
+    "name": "the golden bough",
     "currentPage": "index.html",
     "theme": {
-      "name": "mobirise4",
-      "title": "Mobirise 4",
-      "styling": {
-        "primaryColor": "#149dcc",
-        "secondaryColor": "#ff3366",
-        "successColor": "#F7ED4A",
-        "infoColor": "#82786E",
-        "warningColor": "#879A9F",
-        "dangerColor": "#B1A374",
-        "mainFont": "Rubik",
-        "display1Font": "Rubik",
-        "display1Size": 4.25,
-        "display2Font": "Rubik",
-        "display2Size": 3,
-        "display5Font": "Rubik",
-        "display5Size": 1.5,
-        "display7Font": "Rubik",
-        "display7Size": 1,
-        "display4Font": "Rubik",
-        "display4Size": 1,
-        "isRoundedButtons": true,
-        "isAnimatedOnScroll": false,
-        "isScrollToTopButton": false
-      },
+      "name": "purity",
+      "title": "PurityM",
+      "styling": {},
       "additionalSetColors": [
-        "#5ca8c2"
+        "#42244b"
       ]
     },
     "path": "@PROJECT_PATH@",
+    "versionFirst": "4.12.1",
     "siteFonts": [],
-    "versionFirst": "4.7.6",
-    "uniqCompNum": 5,
-    "versionPublish": "4.12.1",
     "imageResize": true,
-    "screenshot": "screenshot.png"
+    "uniqCompNum": 79,
+    "versionPublish": "4.12.1",
+    "screenshot": "screenshot.png",
+    "favicon": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
   },
   "pages": {
     "index.html": {
@@ -52,515 +38,1697 @@
       "components": [
         {
           "_styles": {
-            ".navbar": {
-              "padding": ".5rem 0",
-              "background": "@menuBgColor",
-              "transition": "none",
-              "min-height": "77px"
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
             },
-            ".navbar-dropdown.bg-color.transparent.opened": {
-              "background": "@menuBgColor"
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1em",
+              "color": "#000000"
             },
-            "a": {
-              "font-style": "normal"
+            ".navbar, .dropdown-menu": {
+              "background": "#ffffff"
             },
-            ".nav-item": {
-              "& span": {
-                "padding-right": "0.4em",
-                "line-height": "0.5em",
-                "vertical-align": "text-bottom",
-                "position": "relative",
-                "text-decoration": "none"
-              },
-              "& a": {
-                "display": "flex",
-                "align-items": "center",
-                "justify-content": "center",
-                "padding": "0.7rem 0 !important",
-                "margin": "0rem .65rem !important"
-              }
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#f5f5f5"
             },
-            ".nav-item:focus, .nav-link:focus": {
-              "outline": "none"
-            },
-            ".btn": {
-              "padding": "0.4rem 1.5rem",
-              ".mbr-iconfont": {
-                "font-size": "1.6rem"
-              },
-              "display": "inline-flex",
-              "align-items": "center"
-            },
-            ".menu-logo": {
-              "margin-right": "auto",
-              ".navbar-brand": {
-                "display": "flex",
-                "margin-left": "5rem",
-                "padding": "0",
-                "transition": "padding .2s",
-                "min-height": "3.8rem",
-                "align-items": "center",
-                ".navbar-caption-wrap": {
-                  "display": "-webkit-flex",
-                  "-webkit-align-items": "center",
-                  "align-items": "center",
-                  "word-break": "break-word",
-                  "min-width": "7rem",
-                  "margin": ".3rem 0",
-                  ".navbar-caption": {
-                    "line-height": "1.2rem !important",
-                    "padding-right": "2rem"
-                  }
-                },
-                ".navbar-logo": {
-                  "font-size": "4rem",
-                  "transition": "font-size 0.25s",
-                  "& img": {
-                    "display": "flex"
-                  },
-                  ".mbr-iconfont": {
-                    "transition": "font-size 0.25s"
-                  }
-                }
-              }
-            },
-            ".navbar-toggleable-sm .navbar-collapse": {
-              "justify-content": "flex-end",
-              "-webkit-justify-content": "flex-end",
-              "padding-right": "5rem",
-              "width": "auto",
-              ".navbar-nav": {
-                "flex-wrap": "wrap",
-                "-webkit-flex-wrap": "wrap",
-                "padding-left": "0",
-                ".nav-item": {
-                  "-webkit-align-self": "center",
-                  "align-self": "center"
-                }
-              },
-              ".navbar-buttons": {
-                "padding-left": "0",
-                "padding-bottom": "0"
-              }
-            },
-            ".dropdown": {
-              ".dropdown-menu": {
-                "background": "@menuBgColor",
-                "display": "none",
-                "position": "absolute",
-                "min-width": "5rem",
-                "padding-top": "1.4rem",
-                "padding-bottom": "1.4rem",
-                "text-align": "left",
-                ".dropdown-item": {
-                  "width": "auto",
-                  "padding": "0.235em 1.5385em 0.235em 1.5385em !important",
-                  "&::after": {
-                    "right": "0.5rem"
-                  }
-                },
-                ".dropdown-submenu": {
-                  "margin": "0"
-                }
-              },
-              "&.open > .dropdown-menu": {
-                "display": "block"
-              }
-            },
-            ".navbar-toggleable-sm": {
-              "&.opened:after": {
-                "position": "absolute",
-                "width": "100vw",
-                "height": "100vh",
-                "content": "''",
-                "background-color": "rgba(0, 0, 0, 0.1)",
-                "left": "0",
-                "bottom": "0",
-                "transform": "translateY(100%)",
-                "-webkit-transform": "translateY(100%)",
-                "z-index": "1000"
-              }
-            },
-            ".navbar.navbar-short": {
-              "min-height": "60px",
-              "transition": "all .2s",
-              "& .navbar-toggler-right": {
-                "top": "20px"
-              },
-              "& .navbar-logo a": {
-                "font-size": "2.5rem !important",
-                "line-height": "2.5rem",
-                "transition": "font-size 0.25s",
-                "& .mbr-iconfont": {
-                  "font-size": "2.5rem !important"
-                },
-                "& img": {
-                  "height": "3rem !important"
-                }
-              },
-              "& .navbar-brand": {
-                "min-height": "3rem"
-              }
-            },
-            "button.navbar-toggler": {
-              "width": "31px",
-              "height": "18px",
-              "cursor": "pointer",
-              "transition": "all .2s",
-              "top": "1.5rem",
-              "right": "1rem",
-              "&:focus": {
-                "outline": "none"
-              },
-              ".hamburger span": {
-                "position": "absolute",
-                "right": "0",
-                "width": "30px",
-                "height": "2px",
-                "border-right": "5px",
-                "background-color": "@hamburgerColor",
-                "&:nth-child(1)": {
-                  "top": "0",
-                  "transition": "all .2s"
-                },
-                "&:nth-child(2)": {
-                  "top": "8px",
-                  "transition": "all .15s"
-                },
-                "&:nth-child(3)": {
-                  "top": "8px",
-                  "transition": "all .15s"
-                },
-                "&:nth-child(4)": {
-                  "top": "16px",
-                  "transition": "all .2s"
-                }
-              }
-            },
-            "nav.opened .hamburger span": {
-              "&:nth-child(1)": {
-                "top": "8px",
-                "width": "0",
-                "opacity": "0",
-                "right": "50%",
-                "transition": "all .2s"
-              },
-              "&:nth-child(2)": {
-                "-webkit-transform": "rotate(45deg)",
-                "transform": "rotate(45deg)",
-                "transition": "all .25s"
-              },
-              "&:nth-child(3)": {
-                "-webkit-transform": "rotate(-45deg)",
-                "transform": "rotate(-45deg)",
-                "transition": "all .25s"
-              },
-              "&:nth-child(4)": {
-                "top": "8px",
-                "width": "0",
-                "opacity": "0",
-                "right": "50%",
-                "transition": "all .2s"
-              }
-            },
-            ".collapsed": {
-              "&.navbar-expand": {
-                "flex-direction": "column"
-              },
-              ".btn": {
-                "display": "flex"
-              },
-              ".navbar-collapse": {
-                "display": "none !important",
-                "padding-right": "0 !important",
-                "&.collapsing,&.show": {
-                  "display": "block !important",
-                  ".navbar-nav": {
-                    "display": "block",
-                    "text-align": "center",
-                    ".nav-item": {
-                      "clear": "both",
-                      "& when (@showButtons = false)": {
-                        "&:last-child": {
-                          "margin-bottom": "1rem"
-                        }
-                      }
-                    }
-                  },
-                  ".navbar-buttons": {
-                    "text-align": "center",
-                    "&:last-child": {
-                      "margin-bottom": "1rem"
-                    }
-                  }
-                }
-              },
-              "button.navbar-toggler": {
-                "display": "block"
-              },
-              ".navbar-brand": {
-                "margin-left": "1rem !important"
-              },
-              ".navbar-toggleable-sm": {
-                "flex-direction": "column",
-                "-webkit-flex-direction": "column"
-              },
-              ".dropdown": {
-                ".dropdown-menu": {
-                  "width": "100%",
-                  "text-align": "center",
-                  "position": "relative",
-                  "opacity": "0",
-                  "display": "block",
-                  "height": "0",
-                  "visibility": "hidden",
-                  "padding": "0",
-                  "transition-duration": ".5s",
-                  "transition-property": "opacity,padding,height"
-                },
-                "&.open > .dropdown-menu": {
-                  "position": "relative",
-                  "opacity": "1",
-                  "height": "auto",
-                  "padding": "1.4rem 0",
-                  "visibility": "visible"
-                },
-                ".dropdown-submenu": {
-                  "left": "0",
-                  "text-align": "center",
-                  "width": "100%"
-                },
-                ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]::after": {
-                  "margin-top": "0",
-                  "position": "inherit",
-                  "right": "0",
-                  "top": "50%",
-                  "display": "inline-block",
-                  "width": "0",
-                  "height": "0",
-                  "margin-left": ".3em",
-                  "vertical-align": "middle",
-                  "content": "\"\"",
-                  "border-top": ".30em solid",
-                  "border-right": ".30em solid transparent",
-                  "border-left": ".30em solid transparent"
-                }
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".navbar-expand": {
-                "flex-direction": "column"
-              },
-              "img": {
-                "height": "3.8rem !important"
-              },
-              ".btn": {
-                "display": "flex"
-              },
-              "button.navbar-toggler": {
-                "display": "block"
-              },
-              ".navbar-brand": {
-                "margin-left": "1rem !important"
-              },
-              ".navbar-toggleable-sm": {
-                "flex-direction": "column",
-                "-webkit-flex-direction": "column"
-              },
-              ".navbar-collapse": {
-                "display": "none !important",
-                "padding-right": "0 !important",
-                "&.collapsing,&.show": {
-                  "display": "block !important",
-                  ".navbar-nav": {
-                    "display": "block",
-                    "text-align": "center",
-                    ".nav-item": {
-                      "clear": "both",
-                      "& when (@showButtons = false)": {
-                        "&:last-child": {
-                          "margin-bottom": "1rem"
-                        }
-                      }
-                    }
-                  },
-                  ".navbar-buttons": {
-                    "text-align": "center",
-                    "&:last-child": {
-                      "margin-bottom": "1rem"
-                    }
-                  }
-                }
-              },
-              ".dropdown": {
-                ".dropdown-menu": {
-                  "width": "100%",
-                  "text-align": "center",
-                  "position": "relative",
-                  "opacity": "0",
-                  "display": "block",
-                  "height": "0",
-                  "visibility": "hidden",
-                  "padding": "0",
-                  "transition-duration": ".5s",
-                  "transition-property": "opacity,padding,height"
-                },
-                "&.open > .dropdown-menu": {
-                  "position": "relative",
-                  "opacity": "1",
-                  "height": "auto",
-                  "padding": "1.4rem 0",
-                  "visibility": "visible"
-                },
-                ".dropdown-submenu": {
-                  "left": "0",
-                  "text-align": "center",
-                  "width": "100%"
-                },
-                ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]::after": {
-                  "margin-top": "0",
-                  "position": "inherit",
-                  "right": "0",
-                  "top": "50%",
-                  "display": "inline-block",
-                  "width": "0",
-                  "height": "0",
-                  "margin-left": ".3em",
-                  "vertical-align": "middle",
-                  "content": "\"\"",
-                  "border-top": ".30em solid",
-                  "border-right": ".30em solid transparent",
-                  "border-left": ".30em solid transparent"
-                }
-              }
-            },
-            "@media (min-width: 767px)": {
-              ".menu-logo": {
-                "flex-shrink": "0"
-              }
-            },
-            ".navbar-collapse": {
-              "flex-basis": "auto"
-            },
-            ".nav-link:hover, .dropdown-item:hover": {
-              "color": "@itemsHoverColor !important"
+            ".navbar-toggler": {
+              "color": "#000000"
             }
           },
-          "_name": "menu1",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#c1c1c1\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#333333\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"https://mobirise.com\">\n                         <img src=\"../_images/logo2.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-1\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">\n                        MOBIRISE\n                    </a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\"></span>\n                        Services\n                    </a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                        About Us\n                    </a>\n                </li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">\n                    <span class=\"mbri-save mbr-iconfont mbr-iconfont-btn \" data-app-selector=\".mbr-iconfont-btn\"></span>\n                    Try It Now!\n                </a></div>\n        </div>\n    </nav>\n</section>",
-          "_cid": "qTkzRZLJNu",
-          "_anchor": "menu1-0",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "menu",
-          "_params": {}
+          "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": true,
+            "sticky": true,
+            "transparent": true,
+            "bgColor": "#ffffff",
+            "fontSize": 1,
+            "fontName": {},
+            "fontColor": "#000000"
+          },
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\"></a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Catalogue</a> <div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page5.html\">About</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><div class=\"dropdown open\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Artists</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page1.html\">frontpage</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page3.html\">sanjai juku</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page2.html\">František Kupka</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page4.html\">Christina Bothwell</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Bjork</a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Help</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Advice</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Contact us</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\" aria-expanded=\"false\"></a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black btn-black-outline\" href=\"https://mobirise.com/\">Download</a></li>",
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/-dsc4162-179x128.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": ""
+            }
+          },
+          "brand": "<a class=\"text-black\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"index.html#header1-0\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Home</a>",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "dropdown-menu",
+          "_anchor": "dropdown-menu-4"
         },
         {
+          "_params": {
+            "showTitle": true,
+            "showText": false,
+            "showButtons": true,
+            "showArrow": true,
+            "contentAlign": "center",
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/-2-1-2000x1414.jpg",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#fff8e0",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.5
+          },
+          "title": "<i>The Golden Bough</i><br>",
+          "text": "Click any text to edit or style it. Click blue \"Gear\" icon in the top right corner to hide/show buttons, text, title and change the block background. <br> Click red \"+\" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add extensions.",
+          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-black\" href=\"index.html#content5-6\" data-toolbar=\"-mbrBtnMove\">Learn More</a>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header1",
+          "_anchor": "header1-0"
+        },
+        {
+          "_params": {
+            "showTitle": true,
+            "showCaption": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/-2-1-2000x1414.jpg",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#fff",
+            "overlayOpacity": 0.7
+          },
+          "title": "<b>网站简介</b>",
+          "caption": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 网站名<i>The Golden Bough</i>来源于一本书《金枝》。《金枝》是一部人类著作，其影响却远远超乎了人类学本身。它对西方科学、文学和思想历史研究的影响，至今难以有同类著述可以替代。<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 以讨论人类死亡的原始观念、信仰与习俗为基点，《金枝》揭示了人类思维进化的共同轨迹，并因此为人类构筑起一座赖以持久依存的精神家园。其蕴含的巨大精神养分，不仅为养老二十世纪伟大的作家乔伊斯、劳伦斯，而且也浸润了叶芝和艾略特的全部诗作。艾略特曾说：“这部著作深刻影响着我们整个一代。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 人类的历史经历了从巫术到宗教，宗教到科学的一系列转变，从而也完成了人类本身思维方式上的巨大转变。我们认识世界的方式正在有巨大的转变，但宗教以及一些远古迷信（例如图腾、多神教）却并未因此而消亡。人类的禁忌、习俗、崇拜为何而存在？本网站试图搜集一些以“金枝”为灵感，即神秘主义为创作源泉的一些艺术形式，并建立讨论的社区，希望观者能窥伺到一些<i>The Golden Bough</i>的奥秘。</div><div><br></div>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content5",
+          "_anchor": "content5-6",
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
+            "DIV": {
+              "font-size": "16px"
             },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
+            ".mbr-section-title": {
+              "font-size": "16px",
+              "color": "#42244b",
+              "text-align": "center"
+            }
+          }
+        },
+        {
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/photo-3.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#37383e",
+            "overlay": true,
+            "overlayColor": "#3C3C3C",
+            "overlayOpacity": 0.8
+          },
+          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-black\">Contact Us</a>",
+          "text1": "<strong>Address</strong><br>\n春晓路109号，<br>中国上海<br><br>\n<strong>Contacts</strong><br>\nEmail: fanzystyle@126.com<br>\nPhone: +86 (0)137 3226 609<br><br>",
+          "text2": "<strong>Social media</strong><ul><li>微博 @FanzyStyle</li><li>Instagram fanzystyle</li><li>微信号 fanzystyle</li></ul>",
+          "form": {
+            "title": "MESSAGE",
+            "action": "fanzystyle@gmail.com",
+            "alerts": {
+              "success": "Thanks for filling out form!"
             },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "H1": {
-              "color": "#0f7699"
+            "fields": {
+              "name": {
+                "visible": false,
+                "title": "Name",
+                "customTitle": "Name*"
+              },
+              "email": {
+                "visible": true,
+                "title": "Email",
+                "customTitle": "Email*"
+              },
+              "phone": {
+                "visible": false,
+                "title": "Phone",
+                "customTitle": "Phone"
+              },
+              "message": {
+                "title": "Message",
+                "customTitle": "Message"
+              }
             }
           },
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "contacts3",
+          "_anchor": "contacts3-1c"
+        }
+      ]
+    },
+    "page1.html": {
+      "settings": {
+        "title": "Artist",
+        "order": 4
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
+            },
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1em",
+              "color": "#000000"
+            },
+            ".navbar, .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#f5f5f5"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            }
+          },
+          "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": true,
+            "sticky": true,
+            "transparent": true,
+            "bgColor": "#ffffff",
+            "fontSize": 1,
+            "fontName": {},
+            "fontColor": "#000000"
+          },
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\"></a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Catalogue</a> <div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page5.html\">About</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><div class=\"dropdown open\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Artists</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page1.html\">frontpage</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page3.html\">sanjai juku</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page2.html\">František Kupka</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page4.html\">Christina Bothwell</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Bjork</a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Help</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Advice</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Contact us</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\" aria-expanded=\"false\"></a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black btn-black-outline\" href=\"https://mobirise.com/\">Download</a></li>",
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/-dsc4162-179x128.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": ""
+            }
+          },
+          "brand": "<a class=\"text-black\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"index.html#header1-0\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Home</a>",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "dropdown-menu",
+          "_anchor": "dropdown-menu-7"
+        },
+        {
+          "_inherit": "header1",
+          "_params": {
+            "showTitle": true,
+            "showText": true,
+            "showButtons": true,
+            "showArrow": false,
+            "contentAlign": "right",
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/photo-1.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.5
+          },
+          "title": "Artists",
+          "text": "我寻找到三位典型的受巫术文化影响、<br>且作品中能明显感受到这种氛围的艺术家，<br>来展示给大家。",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Learn More</a>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
           "_name": "header2",
-          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/-2000x1404.jpeg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#767676\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><i>Fanzy Zhang</i></h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Personal Works</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary-outline\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">LIVE DEMO</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
-          "_cid": "qTkA127IK8",
-          "_anchor": "header2-1",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_anchor": "header2-8"
         },
         {
+          "_afterNavbarItem": ".mbr-section > .mbr-box__magnet",
+          "_params": {
+            "autoplay": true,
+            "fullScreen": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "showBullets": true,
+            "bgColor": "#ffffff",
+            "slides": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/1528958105631-519x523.jpg",
+                "active": false,
+                "showButtons": true,
+                "showText": false,
+                "showTitle": true,
+                "title": "<b>齐歇克•库普卡<br>František Kupka</b>",
+                "contentAlign": "right",
+                "text": "Develop fully responsive, mobile-optimized websites that look amazing on any devices and browsers. Preview how your website will appear on phones, tablets and desktops directly in the visual editor.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary-outline btn-secondary-outline\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">See More</a> ",
+                "alt": ""
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/e8cce3-307011e999c14f6fbc00aec6e0ae0ffemv2-1800x1012.jpg",
+                "active": false,
+                "showButtons": true,
+                "showText": false,
+                "showTitle": true,
+                "title": "<b>Sankai Juku<br>山海塾</b>",
+                "contentAlign": "left",
+                "text": "Mobirise is based on Bootstrap 3 - most powerful mobile first framework. Use any bootstrap themes with no extra work.",
+                "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-info-outline btn-info\" href=\"page3.html\" data-toolbar=\"-mbrBtnMove\">See more</a>",
+                "alt": ""
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/8716919cf1654213882bdd57bace975a-720x794.jpg",
+                "active": true,
+                "showButtons": true,
+                "showText": false,
+                "showTitle": true,
+                "title": "<b>Christina Bothwell</b><br><b>克莉丝汀娜·贝斯维尔</b>",
+                "contentAlign": "center",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"page4.html\" data-toolbar=\"-mbrBtnMove\">See More</a> ",
+                "alt": ""
+              }
+            ]
+          },
+          "articleLayout": false,
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "slider",
+          "_anchor": "slider-9",
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
+            "H2": {
+              "color": "#ffffff"
+            }
+          }
+        }
+      ]
+    },
+    "page2.html": {
+      "settings": {
+        "title": "库布卡",
+        "order": 5
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
             },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1em",
+              "color": "#000000"
             },
-            ".content": {
-              "@media (max-width: 767px)": {
-                "text-align": "center",
-                "> div:not(:last-child)": {
-                  "margin-bottom": "2rem"
-                }
-              }
+            ".navbar, .dropdown-menu": {
+              "background": "#ffffff"
             },
-            ".media-wrap": {
-              "@media (max-width: 767px)": {
-                "margin-bottom": "1rem"
-              },
-              ".mbr-iconfont-logo": {
-                "font-size": "7.5rem",
-                "color": "#f36"
-              },
-              "img": {
-                "height": "6rem"
-              }
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#f5f5f5"
             },
-            ".footer-lower": {
-              ".copyright": {
-                "@media (max-width: 767px)": {
-                  "margin-bottom": "1rem",
-                  "text-align": "center"
-                }
-              },
-              "hr": {
-                "margin": "1rem 0",
-                "border-color": "#fff",
-                "opacity": ".05"
-              },
-              ".social-list": {
-                "padding-left": "0",
-                "margin-bottom": "0",
-                "list-style": "none",
-                "display": "flex",
-                "flex-wrap": "wrap",
-                "justify-content": "flex-end",
-                "-webkit-justify-content": "flex-end",
-                ".mbr-iconfont-social": {
-                  "font-size": "1.3rem",
-                  "color": "#fff"
-                },
-                ".soc-item": {
-                  "margin": "0 .5rem"
-                },
-                "a": {
-                  "margin": "0",
-                  "opacity": ".5",
-                  "-webkit-transition": ".2s linear",
-                  "transition": ".2s linear",
-                  "&:hover": {
-                    "opacity": "1"
-                  }
-                },
-                "@media (max-width: 767px)": {
-                  "justify-content": "center",
-                  "-webkit-justify-content": "center"
-                }
-              }
+            ".navbar-toggler": {
+              "color": "#000000"
             }
           },
-          "_name": "footer1",
-          "_customHTML": "<section group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->  \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showCopyright\" checked>\n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"0\">0</option>\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row content text-white\">\n            <div class=\"col-12 col-md-3\">\n                <div class=\"media-wrap\">\n                    <a href=\"https://mobirise.com/\">\n                        <img src=\"@PROJECT_PATH@/assets/images/2-192x288.png\" alt=\"Mobirise\" title>\n                    </a>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Address\n                </h5>\n                <p class=\"mbr-text\">Chunxiao Road 109,<br>Shanghai.</p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Contacts\n                </h5>\n                <p class=\"mbr-text\">\n                    Email: fanzyzhang@126.com\n                    <br>Phone: +86 1373 226 6609 &nbsp; &nbsp;&nbsp;<br>WeChat: fanzystyle</p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\"></h5>\n                <p class=\"mbr-text\"></p>\n            </div>\n        </div>\n        <div class=\"footer-lower\" mbr-if=\"showCopyright\">\n            <div class=\"media-container-row\">\n                <div class=\"col-sm-12\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"media-container-row mbr-white\">\n                <div class=\"col-sm-6 copyright\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright > p\">\n                        © Copyright 2020 fanzy - All Rights Reserved\n                    </p>\n                </div>\n                <div class=\"col-md-6\">\n                    <div class=\"social-list align-right\" mbr-if=\"iconsCount > 0\">\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>0\">\n                            <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n                            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n                            <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-youtube socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n                            <a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n                            <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-googleplus socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n                            <a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-behance socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qTkAaeaxX5",
-          "_anchor": "footer1-2",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": true,
+            "sticky": true,
+            "transparent": true,
+            "bgColor": "#ffffff",
+            "fontSize": 1,
+            "fontName": {},
+            "fontColor": "#000000"
+          },
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\"></a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Catalogue</a> <div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page5.html\">About</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><div class=\"dropdown open\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Artists</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page1.html\">frontpage</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page3.html\">sanjai juku</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page2.html\">František Kupka</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page4.html\">Christina Bothwell</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Bjork</a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Help</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Advice</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Contact us</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\" aria-expanded=\"false\"></a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black btn-black-outline\" href=\"https://mobirise.com/\">Download</a></li>",
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/-dsc4162-179x128.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": ""
+            }
+          },
+          "brand": "<a class=\"text-black\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"index.html#header1-0\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Home</a>",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "dropdown-menu",
+          "_anchor": "dropdown-menu-c"
+        },
+        {
+          "_params": {
+            "showTitle": true,
+            "showCaption": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/-2-1-2000x1414.jpg",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#fff",
+            "overlayOpacity": 0.7
+          },
+          "title": "齐歇克•库普卡<br>František Kupka",
+          "caption": "<p>齐歇克·库普卡出生于捷克的波希姆，20岁时进入维也纳美术学校，1895年到巴黎定居。自35岁起他的艺术发生深刻的变化，以卓越的技巧服务于可视外表以外的想像。在风景中库普卡对于穿过水面看到的东西进行变形，并用冷酷尖利的颜色予以表现。于是，这些物体便具有了独立于主题之外的奇特生命，摆脱了对于真实的屈从，而获得解放。他一生都执着于灵修和对自然的探索，是<b><i>素食主义者</i></b>，<b><i>灵媒人</i></b>，热衷<b><i>裸体运动</i></b>，更是艺术家<b><i>迪芬巴赫</i></b>（Karl Wilhelm Diefenbach，1851-1913，德国<b><i>象征主义</i></b>与<b><i>新艺术派</i></b>画家，社会改革家，天然主义/裸体主义与和平运动的先驱）<b><i>神秘自然主义组织</i></b>的成员。</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content5",
+          "_anchor": "content5-e",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/1528958105742-343x465.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Kupka,冥想Méditation,1899",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-d"
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/1528958105864-479x719.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "垂直线中的库普卡夫人Madame Kupka dans les verticales,1910-1911",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-f",
+          "_styles": {
+            "DIV": {
+              "color": "#f2f2f2"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/1528958105882-661x582.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "沉默之路（斯芬克斯）La Voie du silence(Sphinges),1903",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-g",
+          "_styles": {
+            "DIV": {
+              "color": "#f2f2f2"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/1528958105935-635x650.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Kupka,睡莲Les Nénuphars,1900-1902",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-i"
+        },
+        {
+          "text": "<p>1900至1910年间，少有画家关注人性和心理学的讨论，那时候库普卡的创作重点仍然是形状、颜色，如何在空间中构图，安置人像。人们坐在椅子上，女孩们在玩水……这一幅幅画作里是空洞的眼神，看不出灵魂。逐渐，身体的具象形状被他有意淡化，溶解到抽象的格子当中。</p><p>库普综合使用并突出了颜色的重要性，他转向了抽象艺术。1907至1910年，是库普卡彻底放弃具象创作，探索颜色张力的重要时期。大皇宫展出的巨幅作品《紫穗槐 Amorpha》，仅由动态扭曲的红蓝两色组成，如巨大的染色体模型，展现了他在转型期间的艺术尝试。之后的作品中，库普卡将关注点转向画面布局与颜色之间紧张或和谐的关系，以及线条、圆圈等构成元素。</p><p>1913年，他说道，“我相信可以在视觉和听觉之间找到一些东西，用颜色创造赋格（Fugue），就像巴赫在音乐中那样做。动态形体表现成为库普卡作品的特色，我们从中会窥见了黑洞，赋格曲，未来主义建筑，运动的大教堂，银河，还有美妙的微观世界。</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-k",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_inherit": "gallery1",
+          "_params": {
+            "showBullets": true,
+            "images": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/1528958105786-523x709.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/1528958105786-523x709-523x709.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/1528958105664-385x529.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/1528958105664-385x529-385x529.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/1528958105864-1-479x719.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/1528958105864-1-479x719-479x719.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/1528958105295-501x687.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/1528958105295-501x687-501x687.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/1528958105322-569x555.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/1528958105322-569x555-569x555.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/1528958105308-551x547.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/1528958105308-551x547-551x547.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/1528958105348-2-700x471.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/1528958105348-2-700x471-700x471.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/1528958105384-700x435.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/1528958105384-700x435-700x435.jpg",
+                "alt": "",
+                "title": "",
+                "active": true
+              }
+            ]
+          },
+          "articleLayout": true,
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "gallery2",
+          "_anchor": "gallery2-l"
+        },
+        {
+          "_inherit": "msg-box1",
+          "_params": {
+            "showTitle": true,
+            "showText": false,
+            "showButtons": true,
+            "inverse": false,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/photo-3.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "title": "",
+          "text": "",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary-outline\" href=\"page1.html\" data-toolbar=\"-mbrBtnMove\">Back</a>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box2",
+          "_anchor": "msg-box2-m"
+        }
+      ]
+    },
+    "page3.html": {
+      "settings": {
+        "title": "山海塾sankaijuku",
+        "order": 6
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
+            },
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1em",
+              "color": "#000000"
+            },
+            ".navbar, .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#f5f5f5"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            }
+          },
+          "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": true,
+            "sticky": true,
+            "transparent": true,
+            "bgColor": "#ffffff",
+            "fontSize": 1,
+            "fontName": {},
+            "fontColor": "#000000"
+          },
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\"></a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Catalogue</a> <div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page5.html\">About</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><div class=\"dropdown open\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Artists</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page1.html\">frontpage</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page3.html\">sanjai juku</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page2.html\">František Kupka</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page4.html\">Christina Bothwell</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Bjork</a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Help</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Advice</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Contact us</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\" aria-expanded=\"false\"></a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black btn-black-outline\" href=\"https://mobirise.com/\">Download</a></li>",
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/-dsc4162-179x128.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": ""
+            }
+          },
+          "brand": "<a class=\"text-black\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"index.html#header1-0\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Home</a>",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "dropdown-menu",
+          "_anchor": "dropdown-menu-n"
+        },
+        {
+          "_params": {
+            "showTitle": true,
+            "showCaption": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/-2-1-2000x1414.jpg",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#fff",
+            "overlayOpacity": 0.7
+          },
+          "title": "Sankai Juku<br>山海塾",
+          "caption": "<p>山海塾是日本舞踏的一种。1975年，天儿牛大从磨赤儿带领的舞踏团大骆驼舰中独立出来，创立了“山海塾”。舞踏是20世纪50年代末在日本发展起来的一种舞蹈形式，最初是它被认为是一种充满哲学性的运动方式。在早期的舞踏演出中，观众往往会被它的暗黑视觉语言所震惊。它强调怪诞，光头舞者，白色的扭曲身姿，诡异的舞步，都会令人感到有些不知所措。如今，经过多年发展之后，舞踏的审美已经为大众熟悉。作为风格化的舞蹈形式，它梦幻般的意境和相对简练的表达对西方舞蹈的发展产生了深远影响。</p><p>这种舞踏的创始人天儿牛大认为几乎所有的西洋舞蹈都是通过紧张感来完成的。抬起一只脚支撑身体，或者维持某一个造型，为动作的基础中增加一份紧张感。但是，在他看来，舞蹈的基础正是在于放松而并非紧张。尽管如此，日本在一段时期也曾出现了“山海塾不是舞踏”的说法。但是天儿牛大却不以为然，他说山海塾的作品传达着“自己独有的舞踏状态”，人正是因为一瞬间松开力量，才能把重心从右脚移到左脚，如果不能移动重心的话，连一步都迈不出去。也就是说，以放松状态为基础，之后再考虑在哪里、如何、加入多大程度的紧张感。通过认真地验证这些方面，才逐渐形成了山海塾的舞踏。</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content5",
+          "_anchor": "content5-p",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/e8cce3-10f1291f0408480a980d602a6eb5d17amv2-980x538.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-q"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/e8cce3-46f898c5b7ed452aba6de3768b58f266mv2-2-980x538.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-r"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/e8cce3-80ca423aa1c4473aa98c4030dc9565e1mv2-d-2182-1455-s-2-1400x933.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-s"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/toki4-1400x927.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-t"
+        },
+        {
+          "text": "<p><br></p><p>“我的脑海中常常会浮现一个画面。那就是为寻求天平两端托盘的平衡，不断地旋转并上下移动的画面。一侧的托盘中装着文化。它拥有固有的特异性，甚至是他人难以理解的神秘的另类艺术。但文化本该就是丰富多样的，相互之间的差异性非常重要。另一侧的托盘中则装着普遍性。这或许就是人之间共同的东西。为了寻求差异与共同的平衡，天平不停地摇晃着。” ——天儿牛大</p><p>山海塾在欧陆的经历赋予了他们作品层次分明的特质。天儿牛大坦言语言、饮食文化、生活习惯方面的差异在巡演途中随处可见，而舞者必须每天沉浸在这种别样的氛围中。他认为正是因为有了差异才会形成文化，与此同时，他也坚信人类有超越人种和国籍的某种“普遍性”。</p><p>这种普遍性，也可以说是“感情的原型”或“原始的冲动”。不管是壶罐上的花纹还是壁画，虽然欧洲、南美、亚洲地域各不相同，但是其中也可窥见一些共通之处。另外，从各地流传下来的黄泉国死而复生的神话、古希腊的《俄耳甫斯和欧律狄克》、以及日本的《伊邪那岐和伊邪那美》等，这些故事虽然细节有所不同，但大体框架非常相似。“当人类面对自然的时候，似乎会有相似的创作冲动”，至少天儿牛大是这么想的。</p><p>对身体的超现实解读，是山海塾舞团的一大特质。著名舞蹈评论家渡边保对山海塾中天儿牛大的作品给予了高度评价：“不要仅仅从概念的逻辑或者意义层面来理解宇宙。要让身体融入到宇宙中，当一切化为乌有时，体内才开始慢慢呈现出宇宙的样貌。这种强烈的信念支撑着这个舞蹈家。天儿牛大的舞蹈是一场在体内宇宙中的旅行，是在他的身体深处隐藏着的宇宙本身。”</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-v",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showBullets": true,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "bgColor": "#efefef",
+            "images": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/meguri1-1878x1048.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/meguri1-1878x1048-800x446.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/toki1-1964x1070.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/toki1-1964x1070-800x436.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/karami2-1880x1022.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/karami2-1880x1022-800x435.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/e8cce3-307011e999c14f6fbc00aec6e0ae0ffemv2-1800x1012.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/e8cce3-307011e999c14f6fbc00aec6e0ae0ffemv2-1800x1012-800x450.jpg",
+                "alt": "",
+                "title": "",
+                "active": true
+              }
+            ]
+          },
+          "articleLayout": false,
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "gallery1",
+          "_anchor": "gallery1-w"
+        }
+      ]
+    },
+    "page4.html": {
+      "settings": {
+        "title": "chritina bethwell",
+        "order": 7
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
+            },
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1em",
+              "color": "#000000"
+            },
+            ".navbar, .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#f5f5f5"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            }
+          },
+          "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": true,
+            "sticky": true,
+            "transparent": true,
+            "bgColor": "#ffffff",
+            "fontSize": 1,
+            "fontName": {},
+            "fontColor": "#000000"
+          },
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\"></a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Catalogue</a> <div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page5.html\">About</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><div class=\"dropdown open\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Artists</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page1.html\">frontpage</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page3.html\">sanjai juku</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page2.html\">František Kupka</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page4.html\">Christina Bothwell</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Bjork</a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Help</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Advice</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Contact us</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\" aria-expanded=\"false\"></a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black btn-black-outline\" href=\"https://mobirise.com/\">Download</a></li>",
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/-dsc4162-179x128.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": ""
+            }
+          },
+          "brand": "<a class=\"text-black\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"index.html#header1-0\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Home</a>",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "dropdown-menu",
+          "_anchor": "dropdown-menu-x"
+        },
+        {
+          "_params": {
+            "showTitle": true,
+            "showCaption": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/-2-1-2000x1414.jpg",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#fff",
+            "overlayOpacity": 0.7
+          },
+          "title": "Christina Bothwell<br>克莉丝汀娜·贝斯维尔",
+          "caption": "<p>来自美国的女艺术家Christina Bothwell，创作工艺以玻璃铸造结合陶土和油彩为主，强烈的个人风格中透出她对灵魂、生死与美之间关系的思考。一方面，玻璃材质独特的剔透属性，加上女童、婴孩等的甜美造型，使她的作品呈现轻逸、性灵的面貌；另一方面，形象与形象之间的意外组合与嫁接，形成一种静默而奇妙的对峙，所有的美、恐惧、颤栗、幻想都蕴于其中，你可以感受到一股原始而纯粹的力量，仿佛从灵魂中喷涌而出，一种轻中之重，一种永恒的凝聚。</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content5",
+          "_anchor": "content5-y"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/p2276484581-1080x810.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-z"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/p2276484939-600x413.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-10"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/p2276484913-640x479.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-11"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/p2276484484-784x1224.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-12"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/p2276483491-960x593.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-14"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/p2276483503-640x335.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-15"
+        },
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/p2276483514-650x1191.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-16"
+        },
+        {
+          "text": "<p><br></p><p>Christina Bothwell，1960年出生在美国，是一位使用玻璃与黏土制作雕塑的艺术家。玻璃是我们生活中随处可见的寻常物品，比如高楼上的那一扇扇窗子，每天早上起床刷牙洗脸要照的镜子。人们对玻璃的存在感变得越来越低了，可正是因为它，让你不至于在建筑物中只被钢筋水泥所包围，它让你能够沐浴到温暖的阳光，能够看到美丽的景色。Christina Bothwell就是看到了这种随处可见的材料身上独特的闪光点，用它拥有的通透，去表现人的内在——灵魂。</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-13",
+          "_styles": {
+            "DIV": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_inherit": "gallery1",
+          "_params": {
+            "showBullets": true,
+            "images": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/p2276483644-600x600.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/p2276483644-600x600-600x600.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/p2276483701-800x810.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/p2276483701-800x810-800x810.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/p2276484438-720x703.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/p2276484438-720x703-720x703.jpg",
+                "alt": "",
+                "title": "",
+                "active": false
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/p2276484650-1-1000x750.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/p2276484650-1-1000x750-800x600.jpg",
+                "alt": "",
+                "title": "",
+                "active": true
+              }
+            ]
+          },
+          "articleLayout": true,
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "gallery2",
+          "_anchor": "gallery2-17"
+        }
+      ]
+    },
+    "page5.html": {
+      "settings": {
+        "title": "about",
+        "order": 1
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
+            },
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1em",
+              "color": "#000000"
+            },
+            ".navbar, .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#f5f5f5"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            }
+          },
+          "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": true,
+            "sticky": true,
+            "transparent": true,
+            "bgColor": "#ffffff",
+            "fontSize": 1,
+            "fontName": {},
+            "fontColor": "#000000"
+          },
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\"></a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Catalogue</a> <div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page5.html\">About</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><div class=\"dropdown open\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Artists</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page1.html\">frontpage</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page3.html\">sanjai juku</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page2.html\">František Kupka</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page4.html\">Christina Bothwell</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Bjork</a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Help</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Advice</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Contact us</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\" aria-expanded=\"false\"></a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black btn-black-outline\" href=\"https://mobirise.com/\">Download</a></li>",
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/-dsc4162-179x128.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": ""
+            }
+          },
+          "brand": "<a class=\"text-black\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"index.html#header1-0\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Home</a>",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "dropdown-menu",
+          "_anchor": "dropdown-menu-18"
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/s3559585-600x1031.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-1h"
+        },
+        {
+          "text": "<p>在罗马附近的内米湖畔有个古老的习俗——森林女神狄安娜神庙的祭司是由一名逃亡的奴隶担任，成为祭司之后他不仅不再被追究，而且还有了“森林之王”的头衔，但是他必须守护圣树，任何其他逃亡的奴隶只要从圣树上折下一节树枝，便获得了与他决斗权利，只要杀死他，便能接替他成为新的祭司、新的森林之王。在这个古老习俗中扮演重要角色的这节树枝便是“金枝”，这也是20世纪古典人类学的“圣经”书名的由来——《金枝》，詹姆斯•弗雷泽所著的一本关于人类早期巫术、宗教、神话、仪式和习俗的百科全书——幽暗神秘且绚丽明朗的文风把人带到了那个远古的时代。</p><p>在远古时候，祭司和国王（世俗政权统治人物）往往是一身多任，是神职与王权的结合——这在远古社会是一个普遍现象，国王兼有占卜、祭天等属于祭司的职权。他们可以利用外在力量为自己造福的巫术早于宗教，因为宗教的基础在于相信存在着某种超自然的力量，这种力量能够随意改变自然的进程，而巫术作为一种观念体系和行为体系则同一种极度民主的文化阶段相适应。因为那时的人们认为，神同人是一样的、没有区别的，只要比团体中的其他成员更优异，个体便可以在生前或死后升格成神，这在人类从巫术时代向宗教时代过渡的漫长历史阶段是很常见的。在这样一种相信神是以人的形象出现的社会信仰中，国王作为最高的统治者，自然是神的代言人，受到人们的崇拜。但是当到一定时期，如他的任期届满、他的精力衰竭或遭遇旱涝饥馑、战争失败之时等等，都必须被处死。这在古希腊、古罗马、古巴比伦、古阿拉伯的文史记载中都有发现。而在非洲某些部落，祭司或首领在任期届满时会被处死，并且在任职期间也有可能被强有力的对手刺杀身亡，而刺杀者继任其祭司职位或王位。这便是弗雷泽称为有限君主制政体的古老习俗。</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-1i",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/timg-7-690x461.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-1j"
+        },
+        {
+          "text": "<p>那时国王的权力和责任是完全一致的——不是依靠暴力也不是玩弄权术来进行统治，而是承担着救民于水火的职责。在远古时代，不能履行职责的国王不像现代的政治家那样拒绝选民对他的质问、罢免，而是直接被流放或杀戮。鲧和禹治水便是很好的中国式的例证：鲧治水用堵的办法，水越堵越大，治水失败，被舜杀死在羽山；鲧的儿子禹去治水，禹用“决”（疏通）的办法，治水成功，舜把王位禅让给了禹。可见在远古时期，国王是当时人类文化最高水平的代表人物——禹制服了洪水，所以他能得到王位；国王必须能让臣民风调雨顺、衣食有望；鲧被杀戮，就是因为他不能做到这点。同样在《旧约•出埃及记》中，在摩西带领众人出走埃及时，每当遇到困难人们就严厉谴责摩西没有尽到责任，甚至急于惩罚他。所以弗雷泽讲：“神圣国王的地位极高，他承担的责任也极重。他的命运，他的生死，他的健康状况，直接关系到世界的兴亡，直接影响着他的臣民，他的疆域中的一切牲畜、植物。于是，原始人便以一整套的“禁忌”加于这位重要的人物。</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-1k",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/timg-8-580x373.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-1l"
+        },
+        {
+          "text": "<p>&nbsp;这些禁忌都是用来保卫他，首先是保卫他的灵魂的，以免这位与整个社会的兴衰紧密相关的人物遭受损害。“保卫国王的首要任务是保卫其灵魂，因为原始人认为万物皆有灵。灵魂能短时间地出走，也可能永远离开躯体，暂时离开为睡觉，永远离开便是死亡；它还可以移居到另一个驱体内，暂时寄附在其他动植物甚至无生物上，因此灵魂最容易受各种巫术的影响，因此必须制定一系列相关的禁忌，以保证其平安。所以在国王经过一段时间或者在其初露虚弱迹象的时候，必须被迫处死；只有当他尚且健康之际，将灵魂及时迁至更为健康的躯体之中，才能永保世间的平安。但当拥有特权的国王满足于世间流光丽彩的生活时，他自然不愿再做牺牲品，于是替身或“临时国王”出现了——替身是国王的儿子，即国王把与自己有血缘关系的子嗣作为自己躯体的替代；而“临时国王”往往是一个地位极低下的人——奴隶、俘虏或囚犯，享受几天“国王”的生活之后，便会受鞭笞或被处死。古巴比伦人每年在撒卡亚节都要杀一个假王，这个代表塔穆兹的假王享受王妃的伺候，五日后即被剥去衣衫，鞭笞至死。在非洲的布尼奥罗也有类似的习俗：每年从各部落选出一人假扮为王，作为已故国王的化身，让其与国王的遗孀在陵庙中同居，为王七日，然后被绞杀。这些都是原有习俗的演化。</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-1m",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/timg-9-847x482.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-1n"
+        },
+        {
+          "text": "<p><br></p><p>在原始人眼里，国王的死亡和复活同植物的枯荣是一致的。因为灵魂可以“迁移”到植物中，所以当折到“金枝”时，不仅获得的是与再任祭司决斗的权力，还象征着神圣的灵魂会迁居到新的躯体里面，在新的躯体里复活。这就是弗雷泽《金枝》一书解说的一切，大量详实的材料和实例，揭示了一个过去很久的世界，而正是那个辉煌而灿烂的世界孕育了今天的世界，也是今天人们追寻“为什么”的根源。在诗人维吉尔的史诗《埃涅阿斯记》中讲到特洛伊的英雄埃涅阿斯根据一位女神的指示，折取了一节树枝，带着它前往冥界去寻父亲的灵魂，向他了解自己未来的命运，这树枝的名字就叫金枝。金枝其实是存在的——槲寄生的树枝，折下来存放几个月之后就变成金黄色，枝叶之间金光闪烁，这不是一枝找寻的金枝么？</p><p><br></p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-1o",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        }
+      ]
+    },
+    "page6.html": {
+      "settings": {
+        "title": "music1",
+        "order": 3
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons [data-button]": {
+              "display": "none !important"
+            },
+            ".navbar-brand a": {},
+            ".nav .link, .dropdown-item": {
+              "font-size": "1em",
+              "color": "#000000"
+            },
+            ".navbar, .dropdown-menu": {
+              "background": "#ffffff"
+            },
+            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
+              "background": "#f5f5f5"
+            },
+            ".navbar-toggler": {
+              "color": "#000000"
+            }
+          },
+          "_params": {
+            "logo": true,
+            "showBrand": true,
+            "hideButtons": true,
+            "sticky": true,
+            "transparent": true,
+            "bgColor": "#ffffff",
+            "fontSize": 1,
+            "fontName": {},
+            "fontColor": "#000000"
+          },
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\"></a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Catalogue</a> <div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page5.html\">About</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><div class=\"dropdown open\"><a data-app-btn=\"true\" class=\"dropdown-item dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Artists</a><div class=\"dropdown-menu dropdown-submenu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page1.html\">frontpage</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page3.html\">sanjai juku</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page2.html\">František Kupka</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"page4.html\">Christina Bothwell</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Bjork</a></div></div><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\"></a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Help</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://forums.mobirise.com/\"></a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Advice</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"#bottom\">Contact us</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\" aria-expanded=\"false\"></a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-black btn-black-outline\" href=\"https://mobirise.com/\">Download</a></li>",
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/-dsc4162-179x128.png",
+              "class": "",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com",
+              "title": ""
+            }
+          },
+          "brand": "<a class=\"text-black\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"index.html#header1-0\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Home</a>",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "dropdown-menu",
+          "_anchor": "dropdown-menu-1t"
+        },
+        {
+          "_inherit": "msg-box5",
+          "_params": {
+            "showTitle": true,
+            "showMeta": false,
+            "showText": true,
+            "showButtons": false,
+            "inverse": true,
+            "imageSize": 50,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/photo-3.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#fff",
+            "overlayOpacity": 0.5
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "width": 1400,
+              "src": "@PROJECT_PATH@/assets/images/p2534729487-449x600.jpg",
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw",
+              "aspectratio": "16:9",
+              "autoplay": false,
+              "loop": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-msg-box4",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title": "比约克 Björk",
+          "text": "<p>　比约克，冰岛著名音乐人、演员。曾是当年在独立音乐圈中显赫一时的“糖”乐队的主唱，1993年推出了首张专辑即被英国权威音乐杂志《Q》评为年度TOP10之一，次年又一举赢得英国音乐大奖“年度最佳新晋歌手”和“年度最佳国际艺术家”两项大奖。</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "meta": "By John Smith posted July 30, 2015",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary-outline\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">More</a>",
+          "_name": "msg-box4",
+          "_anchor": "msg-box4-1v",
+          "_styles": {
+            ".lead P": {
+              "text-align": "left"
+            }
+          }
+        },
+        {
+          "text": "<p><br></p><p><b><i>BJORK Utopia乐评 BY pitchfolk</i></b></p><p>在2015年发行的专辑《Vulnicura》中的所有MV 里面Björk都是一个人单独上镜表演。通过VR技术你可以近距离感受这位从洞穴蜷伏出来在黄昏下湖边跳舞的冰岛女歌手；你也可以进入她天旋地转的口腔或者进入她通过电脑后期合成有着果冻色泽感的身体内部。能通过这种直接“进入”她、感受她的孤立、心碎以及到最终她的伤痕被治愈并在胸前伤口缝针后再离开这样的经验简直不要太亲密。她在《Vulnicura》通过这些MV所表达的最终宣言告示了众人她已经终结了一段长年的恋情，Björk现在是独身的了。</p><p>人只有在这种被孤立的状态才更容易建立一个乌托邦，前提是不会受这种非婚姻和生理需求驱动去迎接别人进入你的世界，状态好比“什么，别人？和我谈恋爱？不不不，我很好谢谢。”但是很多人都达不到这个状态并且很急切地需要别人的“进入”，这件事本身非常花费耐心、激情还有一定的牺牲，因为我们都相信只有通过共同布置好一个适合两人的完美世界才会让彼此更了解爱。再在这个完美世界里添置两人的爱情结晶就能让这个完美世界看起像是个不会受到外界的纷纷扰扰影响的小天堂，简直就像是奇迹一般。Björk本人最近也说了“如果你觉得这个世界没有往好的方向的发展，这时候你得DIY建造一座堡垒。” Björk和共同制作人Arca制作这张非常具有挑战性的《Utopia》就是在这种母系氏族的框架之下完成的。这张专辑幅度很长，并且蜻蜓点水一般探索了一下天真无邪的小浪漫，斥责了男权的暴力，把一首首情歌里对爱情慷慨的付出通过 到位的高雅和激情非常音乐性地渲染了一下。</p><p>Björk在过去四个十年的音乐变迁可以用来看作是这个世界上人类所有情感张力和精神力量变动的轨迹。她和人类知觉的关系非常缥缈，并存在于那些塑造了Björk风格的尖叫和低语式的唱法历史中：情感的地貌(emotional landscapes)、隐藏的空间(hidden places)、体内的星云(internal nebulas)、共同的坐标(mutual coordinates)。她从avant-garde流行明星转型到多媒体艺人的做法并不能说是为了职业的发展而所做的品牌建立，而应该说是她想为了不停歇地去开凿人类的感知、了解感知的起源和未来而开发了更多能表达或者说是探索这些感知的工具。如果说这种做法听起来非常高尚的话，那就是因为她真的就是这么高尚了，还有就是因为她的音乐存在于非常广阔的音乐参谋人员之中，她的通用语也很少涉及到我们的寻常对话之中比如：“失去一个人是什么样 的体验？”“重新开始一段恋情又是什么样的体验？”</p><p><br></p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-1w",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/u38289681542246191998fm26gp0-500x500.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-1x"
+        },
+        {
+          "text": "<p>“失去一个人是怎样的体验？”这个问题就是《Vulnicura》的主题，《Vulnicura》就是这样一张讲述分手的专辑，里面有着大量的弦乐和电子乐作为基础元素提供给广大乐迷聆听。但是其实一个代表着“失去”的火山口比那些即将要“进入”火山口填充物更容易描述，而新专辑《Utopia》“音乐地表上空”反而盘旋着一片更为密集的雾气。在一首将近10分钟长的&lt;Body Memory&gt;里面她问了一个问题——“要怎样才能把握这所有的爱？”她知道不容易所以后面有一句“就像大海捞针一般难。”&lt;The Gate&gt;其实作为首单也是挺合乎情理的，因为这首歌象征着一个旧情伤和新惊喜的十字路口。她胸口那道伤口被她修理过而现在成为她欢迎新的爱情“进入”的大门(The Gate).大量的笛声和合成声从一首歌的开头穿插到另一首歌的结尾，和背景里面大量的sub-basement beat毫无呼应，亦或是说跟带有Björk个人特色的“s”拖长尾音和颤抖的“r”两个辅音相互不呼应着。</p><p>《Utopia》最大的卖点是里面的笛声，跟她之前的几张专辑一样有着不同的侧重点：非常黑暗又亲密的《Vespetine》主打风琴声；《Medúlla》主打大部分合成的人声；《Volta》主打的铜管乐器声；和《Biophilia》的唱诗班风。但是更准确的来说《Utopia》应该是主打呼吸声和风声。在开头非常逮捕人耳膜的饕餮大曲&lt;Arisen My Senses&gt;和温柔爱抚一般的&lt;Blissing Me&gt;里来了两下竖琴声的切入之后整张专辑的都是非常缥缈的(lives almost entirely suspended in the air)。整体的管弦乐编排被笛子声点缀了一下，The Hamrahlid Choirs的采样和Harmonic Whirlies( 一种类似发音管的乐器，具体参考：https://m.youku.com/video/id_XMzE4ODUxODAwNA==.html?&amp;source=&amp;ishttps=1 )声以及一大片从冰岛和Arca老家委内瑞拉采集的鸟叫声。专辑整体编排是比较发散型的难以集中体会，有点像当代古典主义作曲家Olivier Messiaen的系列主义作品，或者是他那一系列纯粹模仿鸟鸣的作品。专辑里面我们听到的歌声大部分是来自一种叫做拟椋鸟(Montezuma Oropendola)的声音，这种鸟的鸣叫有点像“ moog合成器输出高频率波段（微波）”(moog synth in a microwave)一样的效果，音乐家Wren也曾说这种鸟唱歌的节奏跟人类音乐节奏非常相似。我们听到这种呼吸声跟金属、木质、塑料、软骨以及肌肉等材质和发声结构冲撞最后得到这种不调和小调的模式。整整72分钟，这就是Björk职业生涯里时长最长的一张录音室专辑。Björk不会在几条弦上面或者真相里面找寻爱情，她通过推敲歌曲里面的每一个音符而找到爱情。</p><p><br></p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-1y",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/p871548598-966x1280.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-1z"
+        },
+        {
+          "text": "<p>我们应该感激的是，伴随着这样空洞又宏伟的情调而来的还有那么一丝丝的轻率。某个点上她向人们展示她是很“清纯的爱”，这是一个晕眩但是又很清新的形象。但是后面她又被大自然的美惹怒了所以有了“这他妈的大雾，是那些山峰在炫耀！”在前半段她在挣扎着欢迎新的恋情“进入”她，并表示愿意用mp3来交换，听起来她的心像是在爱情的火把上取暖。而后半部分的用词反倒不能完全支撑她前面的感情。《Vulnicura》遗留的伤痛这次流落到&lt;Sue Me&gt;里上升到了白热型，这首歌相当于跟她的前任Matthew Barney说拜拜，而Matthew Barney在2015年也的确为了争夺孩子的抚养权而把Björk告上了法庭。这首歌完全依赖Arca那些有如身体碰撞发出的低频撞击声，这种崇尚力量美的鼓声的渊源也是因为它发出来的声音很像是用大锤撬开地窖门桩时发出来的声音而来。</p><p>Björk过去遗留的情感创伤都在《Utopia》上很直白地表达出来，她没有把这些创伤当做武器，更多的是把这些用来当做一个没法更破碎的精神系统的象征。歌词里她也唱到“he took it from his father/Who took it from his father/Who took it from his father.” 就跟以往一样，Björk成为了她情感起源的“追猎者”，也成为了这些情感的未来发展的“守卫者”。她唱到“Let’s break this curse/So it won’t fall on our daughter,(我们一起打破这道诅咒，不要让它降临到我们女儿的身上)” “And her daughter/And her daughter/Or let this sink into her DNA.(亦或者就让这个(诅咒)成为她的一部分。)” 她把这些心底的话强吐出来，记录到她的女中音记录仪里(mezzo register)。</p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-20",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/p2534729481-600x510.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-21"
+        },
+        {
+          "text": "<p>作为Björk最亲近的合作者之一ANOHNI跟她合作了一首&lt; Future Feminism &gt;,这首歌的歌名也是一个艺术展的名字，这首歌不外呼也落入了“大理石地板13原则”(marble slabs 13 tenets)。这个原则是呼吁人们应该重塑一个以女性为主导、根据女性对于地球的关爱为指导的未来。就好像在专辑的结尾的三首歌里面Björk从山峰上走下来并抱着刻有这个原则的石板。在这里《Utopia》上边的雾气开始散开，笛声开始消逝，调式转成大调，Arca的演奏停止。《Jóga》之后Björk的音乐已经很少有这种开怀感了，而且Björk也在这张专辑上也得到了情感的宣泄。</p><p>这种开怀感也浸入到最后一首歌&lt;Future Forever&gt;里，这首歌是Björk职业生涯中最好的几首歌之一，歌词有一句是“See this possible future and be in it/Hold fast for love, forever.” 她现在的歌词多简单纯粹啊。歌词虽然精简了但是意义毫无削减，就比如在&lt;Tabula Rasa&gt;里面当她对女儿唱:“My deepest wish is that you’re immersed in grace and dignity.（我对你最大的希望就是希望你能成为高雅有尊严的人）” 这种歌词里面没有隐喻，只是很纯粹的母性泛滥。Björk的歌词已经成为塑造她歌声和音乐的基础石阶。这条石阶可能会变得崎岖凹凸不平，但是她的文字力量无可撼动。你不需要去质疑她这点。</p><p>所以当Björk最后描述她的乌托邦的时候，这种感觉已经嵌入了大理石碑上。&lt;Future Forever&gt;里面没有笛声或者电子声，只是一个合成的风琴声，简单又圣洁。专辑不停歇的情感动荡在这一首歌的最后一刻腾空而起静止下来。这张通过母系氏族家庭观和音乐架构所呈现出来的世界是多么地亲昵而又完美。她把她以前试图表达了无数次的、大海捞针般难寻的爱再次拿出来供世人围观朝圣。最后她唱到“Now you mirror at me/ Who I used to be/What I gave to the world, you’ve given back at me.(现在的你反射着我/你把曾经的我，和我对这个世界的付出，都还给了我。)” 世上最伟大的情歌是通过它们浮出水面的精髓部分来测量的。如果《Utopia》里面这些歌词对于你来说还是太隐晦难懂，或者说真实得有点过头，那么可能是因为我们创造的这个不完美世界本来就不是用来支撑Björk的世界。Björk的乌托邦是被别人进入之后才开始创造，我们的乌托邦也该如此。</p><p><br></p>",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-22",
+          "_styles": {
+            "P": {
+              "font-size": "16px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "showText": true
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/p2562782924-600x600.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/sOSTC6FM6Bw"
+            }
+          },
+          "text": "",
+          "alias": "purity/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image2",
+          "_anchor": "image2-23"
         }
       ]
     }
